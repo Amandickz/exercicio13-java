@@ -4,12 +4,10 @@ public class Product {
 
     private String productName;
     private double price;
-    private int quantity;
 
-    public Product(String productName, double price, int quantity) {
+    public Product(String productName, double price) {
         this.productName = productName;
         this.price = price;
-        this.quantity = quantity;
     }
 
     public String getProductName() {
@@ -28,16 +26,8 @@ public class Product {
         this.price = price;
     }
 
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
     @Override
     public String toString() {
-        return productName + "," + price + "," + quantity;
+        return productName + "," + price;
     }
 }
