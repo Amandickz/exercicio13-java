@@ -43,8 +43,6 @@ public class Main {
 
                 String[] split = lineBr.split(",");
 
-                System.out.println(split);
-
                 int cont = 0;
                 double valorTotal = 0.0;
                 String productName = "";
@@ -55,7 +53,7 @@ public class Main {
                     } else if(cont == 1){
                         valorTotal = Double.parseDouble(s);
                     } else if(cont == 2){
-                        valorTotal *= valorTotal + Double.parseDouble(s);
+                        valorTotal *= Double.parseDouble(s);
                     }
                     cont++;
                 }
